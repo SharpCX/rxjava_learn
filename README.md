@@ -54,3 +54,4 @@
 - [初学者系列](https://www.jianshu.com/p/36e0f7f43a51)
 - [flatMap,concatMap,concatMapEager](https://dzone.com/articles/rxjava-flatmap-vs-concatmap-vs-concatmapeager)
 - [Understanding RxJava subscribeOn and observeOn](https://proandroiddev.com/understanding-rxjava-subscribeon-and-observeon-744b0c6a41ea)
+- [206 StatusCode](https://www.cnblogs.com/simonbaker/p/5190675.html)
