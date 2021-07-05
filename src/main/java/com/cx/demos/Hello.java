@@ -86,18 +86,20 @@ public class Hello {
             }
         }, BackpressureStrategy.ERROR)
                 .subscribeOn(Schedulers.io())
-                .subscribe(new Subscriber<Integer>() {
+                .blockingSubscribe(new Subscriber<Integer>() {
                     Subscription subscription;
 
                     @Override
                     public void onSubscribe(Subscription s) {
                         System.out.println("onSubscribe");
                         subscription = s;
+                        subscription.request(10);
                     }
 
                     @Override
                     public void onNext(Integer integer) {
                         System.out.println("onNext: " + integer);
+                        subscription.request(10);
                     }
 
                     @Override
