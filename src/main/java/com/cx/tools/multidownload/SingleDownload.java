@@ -1,4 +1,4 @@
-package com.cx.tools;
+package com.cx.tools.multidownload;
 
 import java.io.*;
 import java.net.URL;

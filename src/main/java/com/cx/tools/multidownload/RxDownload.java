@@ -1,14 +1,13 @@
-package com.cx.tools;
+package com.cx.tools.multidownload;
 
-import sun.nio.ch.ThreadPool;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 
-import java.io.*;
-import java.net.HttpURLConnection;
+import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.concurrent.*;
 
-public class MultiDownload {
+public class RxDownload {
     public static void main(String[] args) throws IOException, InterruptedException {
         long start = System.currentTimeMillis();
         Downloader("https://weibo-analysis.oss-cn-shanghai.aliyuncs.com/apk-dists/test/mapping.txt");
@@ -23,19 +22,12 @@ public class MultiDownload {
         System.out.println(connectUrl.getContentType());
 
         int splitCounter = 5;
-        int perSize = len/splitCounter;
+        int perSize = len / splitCounter;
 
-        ExecutorService executor = Executors.newFixedThreadPool(splitCounter);
-        CompletionService<Void> service = new ExecutorCompletionService<Void>(executor);
-        for (int i = 0; i < splitCounter; i++) {
-            service.submit(new ThreadDownload("downloads\\multi.txt", perSize*i, perSize*i+perSize, path));
-        }
-        for (int i = 0; i < splitCounter; i++) {
-            service.take();
-            System.out.println("stepping");
-        }
-        executor.shutdown();
+        Observable.range(0, splitCounter)
+                .flatMap(i -> Observable.fromCallable(new ThreadDownload("downloads\\multirx.txt", perSize * i, perSize * i + perSize, path)).subscribeOn(Schedulers.io()))
+                .blockingSubscribe();
+
     }
-
 
 }
