@@ -39,6 +39,10 @@
 - Map和FlatMap实现(com.cx.rx.impl.MapObservable)
 - 线程切换原理及实现
 
+### 应用
+- 多线程下载
+
+
 ### 相关框架和工具
 - Flink
 - Spark
