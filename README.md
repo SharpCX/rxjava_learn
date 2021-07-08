@@ -81,6 +81,7 @@
 - [206 StatusCode](https://www.cnblogs.com/simonbaker/p/5190675.html)
 - [Subject](https://blog.csdn.net/weixin_42814000/article/details/105956035)
 - [hot vs cold](https://stackoverflow.com/questions/32190445/hot-and-cold-observables-are-there-hot-and-cold-operators)
+- [设计模式](https://refactoring.guru/design-patterns)
 
 ### 参考书籍(微信读书都有)
 - [reactive-programming-with-rxjava](https://piemonj.gitbooks.io/reactive-programming-with-rxjava/content/)
