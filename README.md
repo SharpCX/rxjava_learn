@@ -2,6 +2,8 @@
 ### 什么是ReactiveX
 ### 为什么使用ReactiveX
 ![img.png](img.png)
+### 支持语言列表
+![img_1.png](img_1.png)
 ### 示例
 - HelloWorld
 - 常用操作符
@@ -83,3 +85,4 @@
 ### 参考书籍(微信读书都有)
 - [reactive-programming-with-rxjava](https://piemonj.gitbooks.io/reactive-programming-with-rxjava/content/)
 - Learning-RxJava-Build-concurrent-applications-using-reactive-programming
+- RxJava反应式编程(这个翻译有点问题，怎么翻译都行，看你怎么理解)
