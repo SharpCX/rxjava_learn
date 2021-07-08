@@ -9,13 +9,13 @@
   - map
   - from
   - Group
+  - groupby
 - hot vs cold
   - subject
   - multicast
 - 订阅与被订阅的结合  
   - 多对一
     - merge, concat, zip
-    - groupby
   - 一对多
     - publish
     - replay
@@ -79,3 +79,7 @@
 - [206 StatusCode](https://www.cnblogs.com/simonbaker/p/5190675.html)
 - [Subject](https://blog.csdn.net/weixin_42814000/article/details/105956035)
 - [hot vs cold](https://stackoverflow.com/questions/32190445/hot-and-cold-observables-are-there-hot-and-cold-operators)
+
+### 参考书籍(微信读书都有)
+- [reactive-programming-with-rxjava](https://piemonj.gitbooks.io/reactive-programming-with-rxjava/content/)
+- Learning-RxJava-Build-concurrent-applications-using-reactive-programming
