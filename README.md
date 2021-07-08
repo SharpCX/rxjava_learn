@@ -24,7 +24,6 @@
   - observeOn,subscribeOn
   - parallel,sequential
   - [flatMap,concatMap,concatMapEager](https://dzone.com/articles/rxjava-flatmap-vs-concatmap-vs-concatmapeager)
-  - parallel,sequential
   - blockingSubscribe,Schedulers.mainThread
 - 流控制和背压
   - 分组 
