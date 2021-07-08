@@ -1,6 +1,7 @@
 ## ReactiveX入门
 ### 什么是ReactiveX
 ### 为什么使用ReactiveX
+![img.png](img.png)
 ### 示例
 - HelloWorld
 - 常用操作符
