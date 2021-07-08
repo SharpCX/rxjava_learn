@@ -8,22 +8,38 @@
   - map
   - from
   - Group
-  - 分组
+- hot vs cold
+  - subject
+  - multicast
+- 订阅与被订阅的结合  
+  - 多对一
     - merge, concat, zip
     - groupby
-  - 多播
+  - 一对多
     - publish
-- 线程切换
+    - replay
+    - cache
+- 多线程
   - observeOn,subscribeOn
   - parallel,sequential
-- 多线程并发
   - [flatMap,concatMap,concatMapEager](https://dzone.com/articles/rxjava-flatmap-vs-concatmap-vs-concatmapeager)
   - parallel,sequential
   - blockingSubscribe,Schedulers.mainThread
-- 数据分组
-  - Buffer
-  - Window
-- Flowable
+- 流控制和背压
+  - 分组 
+    - buffer
+    - window
+  - 采样  
+    - throttle
+    - debounce
+  - 背压
+    - flowable
+    - 背压异常
+    - 背压处理方式
+    - generate
+- 自定义操作
+  - compose
+  - lift,ObservableOperator
 
 ### 重点讲解
 - observeOn和subscribeOn
@@ -55,3 +71,5 @@
 - [flatMap,concatMap,concatMapEager](https://dzone.com/articles/rxjava-flatmap-vs-concatmap-vs-concatmapeager)
 - [Understanding RxJava subscribeOn and observeOn](https://proandroiddev.com/understanding-rxjava-subscribeon-and-observeon-744b0c6a41ea)
 - [206 StatusCode](https://www.cnblogs.com/simonbaker/p/5190675.html)
+- [Subject](https://blog.csdn.net/weixin_42814000/article/details/105956035)
+- [hot vs cold](https://stackoverflow.com/questions/32190445/hot-and-cold-observables-are-there-hot-and-cold-operators)
